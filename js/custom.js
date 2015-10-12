@@ -1,25 +1,7 @@
 
-//HIRED//
-
-$("#hired button").click(function() {
-
- $("#box1 img").animate({
- right: "-550px"
- },1500).delay(500).animate({
- right: "-1500px"
- },1500);
-
- $("#box2 img").animate({
- left: "0px"
- },1500).delay(500).animate({
- 	left: "-1500px"
- },1500);
-
- });
-
 
 $(window).scroll(function(){
-	if (true) {
+	if($(window).scrollTop() > 600) {
 		$('.navbar-default').fadeIn(300);
 	}
 	else {
@@ -294,49 +276,100 @@ $(document).ready(function() {
 
 }());
 
+$("#js-rotating").Morphext({
+    // The [in] animation type. Refer to Animate.css for a list of available animations.
+    animation: "bounceIn",
+    // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+    separator: ",",
+    // The delay between the changing of each phrase in milliseconds.
+    speed: 2000,
+    complete: function () {
+        // Called after the entrance animation is executed.
+    }
+});
 
-$(function () {
-    $('.demo').textillate({
-    	in: {
-    		effect: 'rotateIn'
-    	},
-    	out: {
-    		effect: 'flash'
-    	},
-    	loop: true
-    });
-  
-  $(function () {
-    $('.txt').textillate({
-    	in: {
-    		effect: 'pulse',
-    	}, 
-    	out: {
-    		effect: 'pulse'
-    	},
-    	loop: true
-    });
-    
-  $(function () {
-    $('.txt2').textillate({
-    	in: {
-    		effect: 'bounceIn',
-    	}, 
-    	out: {
-    		effect: 'flip'
-    	},
-    	loop: true
-    });
+$("#pulse").Morphext({
+    // The [in] animation type. Refer to Animate.css for a list of available animations.
+    animation: "pulse",
+    // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+    separator: ",",
+    // The delay between the changing of each phrase in milliseconds.
+    speed: 2000,
+    complete: function () {
+        // Called after the entrance animation is executed.
+    }
+});
 
-$(function () {
-	$('.tlt').textillate({ 
-  	in: { 
-    	effect: 'splat' 
-  			},
-  	out: { 
-      effect: 'foldUnfold', 
-        }, 
-       loop: true
-	});
+$('#demo5').circleType({fitText:true, radius: 180});
 
-     
+
+
+
+//HIRED//
+
+$("#hired button").click(function() {
+
+ $("#box1 img").animate({
+ right: "-550px"
+ },1500).delay(500).animate({
+ right: "-1500px"
+ },1500);
+
+ $("#box2 img").animate({
+ left: "0px"
+ },1500).delay(500).animate({
+ 	left: "-1500px"
+ },1500);
+
+ });
+//FINISH ANIMATE
+
+
+
+
+// $(function () {
+// $('.demo').textillate({
+// initialDelay: 6000,
+// inEffects: ['hidden'],
+// in: {
+// effect: 'rotateIn'
+// },
+// out: {
+// effect: 'flash'
+// },
+// loop: true
+// });
+// }); 
+// $(function () {
+// $('.txt').textillate({
+// in: {
+// effect: 'pulse',
+// }, 
+// out: {
+// effect: 'pulse'
+// },
+// loop: true
+// });
+// }); 
+// $(function () {
+// $('.txt2').textillate({
+// in: {
+// effect: 'bounceIn',
+// }, 
+// out: {
+// effect: 'flip'
+// },
+// loop: true
+// });
+// });
+// $(function () {
+// $('.tlt').textillate({ 
+// in: { 
+// effect: 'splat' 
+// },
+// out: { 
+// effect: 'foldUnfold', 
+// }, 
+// loop: true
+// });
+// });

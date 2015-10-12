@@ -2369,11 +2369,65 @@ canvas {
 }
 /* Generated with Bounce.js. Edit at http://bouncejs.com/#{s:[{T:"c",e:"b",d:1000,D:0,f:{x:1,y:1},t:{x:0.2,y:1},s:3,b:4},{T:"c",e:"b",d:1000,D:500,f:{x:1,y:1},t:{x:1,y:0.2},s:3,b:4},{T:"c",e:"b",d:1000,D:1000,f:{x:1,y:1},t:{x:5,y:1},s:3,b:4},{T:"c",e:"b",d:500,D:1500,f:{x:1,y:1},t:{x:1,y:5},s:1,b:2}]} */
 /*changing media queries for carousel and the site*/
+@media screen and (max-width: 400px){
+	.carousel-inner img {
+		height: 164px !important; 
+	}
+}
+
 @media screen and (max-width: 480px){
 	.item img {
 		height: 164px !important; 
 	}
 }
 
+@media screen and (max-width: 640px){
+	.item img {
+		height: 300px !important; 
+	}
+}
 
+@media screen and (max-width: 768px){
+	.item img {
+		height: 238px !important; 
+	}
+}
+
+@media screen and (max-width: 805px){
+	.item img {
+		height: 251px !important; 
+	}
+}
+@media screen and (max-width: 836px){
+	.item img {
+		height: 261px !important; 
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.item img {
+		height: 330px !important; 
+	}
+}
+
+@media screen and (max-width: 1170px){
+	.item img {
+		height: 400px !important; 
+	}
+}
+
+@media screen and (max-width: 1280px){
+	.item img {
+		height: 308px !important; 
+	}
+}
+
+@media screen and (max-width: 1366px){
+	.item img {
+		height: 335px !important; 
+	}
+}
+
+
+.
 
